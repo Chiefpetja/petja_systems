@@ -1,48 +1,47 @@
 # Crab Router
 
-The Crab Router is a conceptual routing system designed to navigate complex solution spaces.
+## Summary
 
-Instead of following a linear reasoning path, the router explores multiple contextual branches simultaneously.
+Crab Router is an experimental deterministic context-growth layer for text and prose inputs.
 
-The name refers to the sideways movement of exploration — searching across multiple directions instead of directly toward a predefined goal.
+It is intended as a possible extension for Jarvis.
 
----
+## Public Goal
 
-## Motivation
+The central question is whether controlled context expansion can make LLM planning more grounded and reduce hallucination risk.
 
-Many problems cannot be solved through linear reasoning alone.
+At a public level, the idea can be described as:
 
-The Crab Router explores the problem space by:
+```text
+Text / prose input
+→ deterministic context growth
+→ branch and frame construction
+→ more inspectable planning context
+→ Jarvis execution layer
+```
 
-- branching into alternative interpretations
-- comparing structural paths
-- evaluating solution stability
+## Intended Role
 
----
+Crab Router belongs to the text / planning side of the project map.
 
-## Core Mechanism
+It is designed to support Jarvis by expanding, organizing, and stabilizing context before execution decisions are made.
 
-The router uses a modular structure:
+## What Can Be Publicly Said
 
-- task frame generation
-- contextual branch exploration
-- constraint checking
-- solution synthesis
+The public description can focus on:
 
-The system does not aim to predict answers but to discover stable solution regions.
+- deterministic context growth from text
+- branch and frame construction
+- making planning context more inspectable
+- reducing hallucination risk as an experimental goal
+- integration direction as a Jarvis extension
 
----
+## Current Status
 
-## Design Philosophy
+Concept / early extension layer.
 
-The architecture favors:
+It should be described conservatively. It is not presented as a finished hallucination solution.
 
-- exploration over prediction
-- structural discovery over optimization
-- contextual reasoning over static models
+## Public Boundary
 
----
-
-## Status
-
-Conceptual system under active development.
+Public descriptions should explain the purpose and intended Jarvis integration, but should not imply that the system fully solves hallucination or autonomous reasoning.
