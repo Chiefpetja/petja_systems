@@ -1,0 +1,5 @@
+run_label,wall_clock_setting_seconds,steps_reached,validation_loss,bpb,int8_zlib_bytes,status
+baseline local,600,863,2.8101,1.6643,11817558,constraint-close experiment
+dual MLP extended,1200,1392,2.6908,1.5937,13644934,extended experiment
+architecture extended,2000,1475,2.6636,1.5775,14172446,extended experiment
+exploratory long run,9000,7007,2.4052,1.4245,16121692,exploratory long run
