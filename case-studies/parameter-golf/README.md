@@ -617,13 +617,11 @@ The run history should therefore be interpreted as an engineering log, not as a 
 
 ## Included Files
 
-The intended public artefacts for this case study are:
+The public artefacts for this case study are:
 
-```text
-train_gpt_runpod.py   # main experimental training script
-run_history.csv       # raw logged runs and metrics
-README.md             # experiment summary and interpretation
-```
+- [`train_gpt_runpod.py`](./train_gpt_runpod.py) — main experimental training script
+- [`run_history.csv`](./run_history.csv) — raw logged runs and metrics
+- [`README.md`](./README.md) — experiment summary and interpretation
 
 The earlier baseline-compatible script may also be referenced as:
 
