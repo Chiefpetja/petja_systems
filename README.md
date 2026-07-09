@@ -1,158 +1,133 @@
 # Petja Systems
 
-Architecture and research hub for deterministic exploration systems, context-network engines, and experimental AI infrastructure.
+Public architecture and project overview for experimental systems around controlled execution, deterministic context growth, structural data analysis, and measurable machine-learning experiments.
 
-This repository provides an overview of a collection of experimental software systems focused on structured exploration, context-driven computation, and modular AI architectures.
+This repository is intentionally written as a **showcase and status overview**. It documents project direction, system boundaries, implementation status, and selected evidence without disclosing private mathematical formulations or sensitive internal mechanisms.
 
-The goal of these projects is to investigate alternative approaches to problem exploration, system architecture, and context-based reasoning.
+## Project Map
 
----
+The current work is separated into three public areas:
 
-## Structure
+```text
+Petja Systems
+├─ Text / Planning Side
+│  ├─ Jarvis Context Engine
+│  └─ Crab Router
+├─ Data / Structure Side
+│  ├─ Field Core / Frequency Bubble Model
+│  └─ Structural Prediction Model
+└─ Evidence Case Studies
+   └─ Parameter-Golf-inspired GPT training
+```
 
-- Core Idea & System Overview  
-- Architecture & Pipelines  
-- Project Overviews (Jarvis, Crab Router, Frequency Model)  
-- Design Principles  
-- Author / About (at the end)
+The split is intentional:
 
----
+- **Jarvis** and **Crab Router** belong to the text, planning, execution, and validation side.
+- **Field Core** and the **Structural Prediction Model** belong to the data, structure, and prediction side.
+- **Parameter-Golf-inspired GPT training** is included as an open evidence case with code and measurable run logs.
 
-# Core Idea
+## Projects
 
-Most modern systems rely heavily on heuristics, optimization loops, or opaque decision processes.
+### Field Core / Frequency Bubble Model
 
-The systems collected here explore a different approach:
+A deterministic structural analysis pipeline for tabular datasets.
 
-• deterministic context growth  
-• structured exploration instead of planning  
-• sandboxed experimentation  
-• evidence-driven structure formation  
-• external validation via reality gates  
+The Field Core transforms input data into internal structural artefacts that can be inspected, compared, and used by separate downstream layers. It is not presented as a classical clustering method and is not presented as a prediction model.
 
-Rather than optimizing towards a predefined solution, these systems allow structure to emerge through controlled exploration and observable effects.
+The public repository only describes the role, boundaries, and current status of the system. The mathematical formulation, internal update rules, and detailed reconstruction mechanisms are intentionally not included.
 
----
+See: [`projects/field-core.md`](projects/field-core.md)
 
-# System Architecture Overview
+### Structural Prediction Model
 
-The systems follow a common high-level pipeline:
-Blueprint → Context → Exploration → Evidence → Structure → Reality
+An active development branch for target prediction based on artefacts produced by the Field Core.
 
+Earlier experiments tried to feed raw Field Core outputs into standard prediction models to improve error metrics. That direction did not work well enough because the standard predictors treated the outputs as ordinary numeric columns and could not reliably interpret their structural meaning.
 
-Conceptually the process works like this:
+The current direction is therefore a dedicated prediction layer that is designed around the artefacts instead of treating them as raw feature values.
 
-1. **Blueprint**
-   - A structured description of a problem space.
+See: [`projects/structural-prediction-model.md`](projects/structural-prediction-model.md)
 
-2. **Context Growth**
-   - Context is expanded deterministically over time.
+### Jarvis Context Engine
 
-3. **Exploration**
-   - Controlled exploration frames are generated.
+A conservative blueprint-to-execution prototype.
 
-4. **Execution**
-   - Experiments run inside isolated sandboxes.
+Jarvis is intended to turn structured software blueprints into controlled execution loops with tests, logs, and explicit write boundaries. It is not presented as an autonomous AI developer.
 
-5. **Evidence Extraction**
-   - Observable effects are extracted.
+See: [`projects/jarvis.md`](projects/jarvis.md)
 
-6. **Structure Formation**
-   - Effects form a context network.
+### Crab Router
 
-7. **Reality Gates**
-   - External tests determine valid outcomes.
+An experimental deterministic context-growth layer for text and prose inputs.
 
----
+The goal is to explore whether controlled context expansion can make LLM planning more grounded and reduce hallucination risk. Crab Router is intended as a possible extension for Jarvis.
 
-# Architecture Diagram
+See: [`projects/crab-router.md`](projects/crab-router.md)
 
-![JARVIS Pipeline](docs/Jarvis_pipeline.png)
+## Evidence Case Study
 
-![Frequency Pipeline](docs/frequency_data_pipeline.png)
+### Parameter-Golf-inspired GPT Training
 
-![Crab Router Pipeline](docs/crab_router_pipeline.png)
+A measurable GPT training experiment inspired by OpenAI's Parameter Golf challenge format.
 
----
+This is **not an official competition submission** and is not presented as a leaderboard result. The challenge format was used as a reference environment for constrained training experiments with executable code, run history, validation metrics, and compressed artefact sizes.
 
-# Projects
+Unlike the core research systems, this case study intentionally includes code and raw run logs.
 
-This repository serves as the entry point for several related projects.
+See: [`case-studies/parameter-golf/README.md`](case-studies/parameter-golf/README.md)
 
-## Jarvis Context Engine
-A deterministic context expansion and exploration framework for programming.
+## Disclosure Boundary
 
-Focus:
-- context network formation
-- structured exploration
-- sandbox execution
+This repository intentionally avoids publishing the private research core.
 
-→ [Project overview](projects/jarvis-context-engine.md)
+Public documentation may include:
 
----
+- project purpose and motivation
+- high-level architecture boundaries
+- implementation status
+- conservative descriptions of system roles
+- selected non-sensitive artefact categories
+- public case-study code and run metrics
 
-## Frequency Bubble Model
-A structural data analysis framework for detecting interaction clusters and stability regions inside complex datasets.
+Public documentation should not include:
 
-Focus:
-- factor chains
-- structural pattern detection
-- emergent signal formation
+- mathematical derivations of the core systems
+- internal update rules
+- detailed reconstruction mechanisms
+- private patch history with sensitive design decisions
+- diagrams that expose internal mechanism flow
+- implementation notes that would allow private mechanisms to be reconstructed
 
-→ [Project overview](projects/frequency-bubble-model.md)
+See: [`docs/disclosure-boundary.md`](docs/disclosure-boundary.md)
 
----
+## Repository Structure
 
-## Crab Router
-An exploration and routing architecture designed to navigate complex solution spaces and coordinate contextual reasoning paths.
+```text
+README.md
+projects/
+  field-core.md
+  structural-prediction-model.md
+  jarvis.md
+  crab-router.md
+case-studies/
+  parameter-golf/
+    README.md
+    train_gpt_runpod.py
+    run_history.csv
+docs/
+  disclosure-boundary.md
+  status-matrix.md
+  terminology.md
+```
 
-Focus:
-- task routing
-- modular execution graphs
-- structured system orchestration
+## Status
 
-→ [Project overview](projects/crab-router.md)
+This repository is a public overview of ongoing experimental work. The projects are at different maturity levels and are described conservatively in the status matrix.
 
----
+See: [`docs/status-matrix.md`](docs/status-matrix.md)
 
-# Design Principles
+## Author
 
-The projects in this repository follow several shared design principles.
+Independent developer focused on system architecture, structured problem solving, experimental software systems, and evidence-driven iteration.
 
-### Deterministic Systems
-Given identical inputs, the system produces identical structural outcomes.
-
-### Exploration over Optimization
-Systems explore possible structures instead of optimizing toward a single goal.
-
-### Sandboxed Execution
-Experiments are executed in isolated environments to maintain causal clarity.
-
-### Evidence-driven Structure
-System structure emerges from observable effects rather than internal scoring.
-
-### External Validation
-Final acceptance of results is determined through real tests and validation gates.
-
-
----
-
-# Status
-
-This repository is a research and architecture overview.
-
-Implementation details and experimental prototypes are developed in separate project repositories.
-
----
-
-# Author
-
-## About
-
-I am a 22-year-old developer based in Freiburg, focused on system architecture, structured problem solving, and exploration-driven computation.
-
-My strength lies in understanding complex systems, analyzing underlying logic, and breaking down problems into structured, testable components.
-
-I use code as a tool to explore, validate, and improve systems rather than just implementing features.
-
-Currently looking for opportunities to contribute to real-world systems while continuing to develop my own architectures.
+The goal of this repository is to present a clear public view of the work without exposing private research mechanisms.
